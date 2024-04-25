@@ -44,6 +44,7 @@ export function registrerControls(){
       sounds.fireplaceAudio.play()
     }else {
       sounds.fireplaceAudio.pause()
+      
     }
   })
 }
