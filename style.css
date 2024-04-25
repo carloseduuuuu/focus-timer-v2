@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /*cores*/
+  --bg-color: hsl(0, 0%, 100%);
+  --text-color: hsl(240, 6%, 21%);
+  --bg-button: hsl(240, 9%, 89%);
+  --bg-button-secondary: hsl(194, 97%, 31%);
+  --primary-color: hsl(194, 100%, 63%);
+}
+
+body {
+  font-size: 1.6rem;
+
+  display: grid;
+  height: 100vh;
+  place-content: center;
+
+  background-color: var(--bg-color);
+
+}
+
+
+#app {
+  display: flex;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+#content {
+  display: grid;
+  justify-items: center;
+}
+
+
+#timer {
+  font-size: 9.0rem;
+  font-family: sans-serif;
+  color: var(--text-color);
+  font-weight: 600;
+
+}
+
+#controls {
+  display: flex;
+  gap: 4.0rem;
+}
+
+#controls button {
+  width: 4.8rem;
+  
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  margin-top: 4.8rem;
+
+  transition: all .6s;
+}
+
+#controls button:hover {
+  transform: scale(1.1);
+  filter: invert(50%);
+}
+
+#soundbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+#soundbar button {
+  padding: 4.8rem;
+  border: none;
+  border-radius: .9rem;
+  cursor: pointer;
+  background-color: var(--bg-button);
+  transition: all .6s;
+}
+
+#soundbar button:hover {
+  transform: scale(1.1);
+}
+
+
+#soundbar button:hover,
+#soundbar button:focus {
+  background-color: var(--bg-button-secondary);
+}
+
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+}

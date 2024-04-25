@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pomodoro">
+
+  <title>Focus Timer 2.0</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+  <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+  <!--Corpo principal-->
+  <div id="app">
+    <div id="content">
+        <!--Aonde fica o timer-->
+      <section id="timer">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+      <!--Botões de controle do timer-->
+      <section id="controls">
+        <button >
+          <span class="sr-only">Iniciar contador</span>
+          <img data-action="Togglerunning" src="./assets/play.svg" alt="iniciar contador">
+        </button>
+        <button>
+          <span class="sr-only">Parar contador</span>
+          <img data-action="reset" src="./assets/stop.svg" alt="parar contador">
+        </button>
+        <button>
+          <span class="sr-only">Adicionar minutos</span>
+          <img data-action="addMinutes" src="./assets/increase.svg" alt="adicionar minutos">
+        </button>
+        <button>
+          <span class="sr-only">Diminuir minutos</span>
+          <img data-action="removeMinutes" src="./assets/todecrease.svg" alt="diminuir minutos">
+        </button>
+      </section>
+    </div>
+    <!--botões de sons-->
+    <section id="soundbar">
+      <button id="forest">
+        <span class="sr-only">Som de floresta</span>
+        <img  src="./assets/arvore.svg" alt="imagem de arvore">
+      </button>
+      <button  id="rain">
+        <span class="sr-only">Som de chuva</span>
+        <img  src="./assets/nuvem.svg" alt="imagem de nuvem">
+      </button>
+      <button id="coffeShop">
+        <span class="sr-only">Som de pessoas falando</span>
+        <img   src="./assets/cafe.svg" alt="imagem de uma cafeteria">
+      </button>
+      <button id="campFire">
+        <span class="sr-only">Som de fogo</span>
+        <img  src="./assets/fogo.svg" alt="imagem de fogo">
+      </button>
+    </section>
+  </div>
+</body>
+</html>
