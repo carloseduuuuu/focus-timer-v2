@@ -84,6 +84,11 @@ body {
   transition: all .6s;
 }
 
+#soundbar button img {
+  width: 5.6rem;
+  color: red;
+}
+
 #soundbar button:hover {
   transform: scale(1.1);
 }

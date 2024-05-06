@@ -7,6 +7,6 @@ export const seconds = document.getElementById('seconds')
 export const selectorSounds = {
   buttonSoundForest: document.querySelector('#forest'),
   buttonSoundRain: document.querySelector('#rain'),
-  buttonSoundCoffe: document.querySelector('#coffeShop'),
+  buttonLofiSound: document.querySelector('#lofi'),
   buttonSoundCampFire: document.querySelector('#campFire'),
 }

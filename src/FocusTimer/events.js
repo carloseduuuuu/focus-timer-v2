@@ -32,11 +32,11 @@ export function registrerControls(){
 
     }
   })
-  el.selectorSounds.buttonSoundCoffe.addEventListener('click', ()=>{
-    if (sounds.coffeAudio.paused){
-      sounds.coffeAudio.play()
+  el.selectorSounds.buttonLofiSound.addEventListener('click', ()=>{
+    if (sounds.lofiAudio.paused){
+      sounds.lofiAudio.play()
     } else {
-      sounds.coffeAudio.pause()
+      sounds.lofiAudio.pause()
     }
   })
   el.selectorSounds.buttonSoundCampFire.addEventListener('click', ()=>{
