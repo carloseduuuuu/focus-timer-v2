@@ -32,6 +32,7 @@ export function registrerControls(){
 
     }
   })
+  
   el.selectorSounds.buttonLofiSound.addEventListener('click', ()=>{
     if (sounds.lofiAudio.paused){
       sounds.lofiAudio.play()
@@ -39,6 +40,7 @@ export function registrerControls(){
       sounds.lofiAudio.pause()
     }
   })
+
   el.selectorSounds.buttonSoundCampFire.addEventListener('click', ()=>{
     if (sounds.fireplaceAudio.paused){
       sounds.fireplaceAudio.play()
