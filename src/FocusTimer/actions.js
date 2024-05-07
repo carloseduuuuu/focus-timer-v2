@@ -6,6 +6,7 @@ export function Togglerunning() {
   state.isRunning = document.documentElement.classList.toggle('running')
   timer.countDown()
   sounds.buttonPress.play()
+  sounds.focusTimerIA.play()
 } 
 
 export function reset() {
