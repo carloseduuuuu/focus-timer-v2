@@ -7,11 +7,7 @@ export function Togglerunning() {
   timer.countDown()
   
   sounds.buttonPress.play()
-  
-  if(state.isRunning) {
-    sounds.focusTimerIA.play()
-    
-  }
+
 }
 
 export function reset() {
