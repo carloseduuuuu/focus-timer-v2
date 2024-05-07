@@ -5,9 +5,14 @@ import * as sounds from './sounds.js'
 export function Togglerunning() {
   state.isRunning = document.documentElement.classList.toggle('running')
   timer.countDown()
+  
   sounds.buttonPress.play()
-  sounds.focusTimerIA.play()
-} 
+  
+  if(state.isRunning) {
+    sounds.focusTimerIA.play()
+    
+  }
+}
 
 export function reset() {
   state.isRunning = false
